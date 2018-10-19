@@ -1,6 +1,6 @@
 /**
- * grunt-html2md
- * https://github.com/paazmaya/grunt-html2md
+ * grunt-turndown
+ * https://github.com/marcusds/grunt-turndown
  *
  * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)
  * Licensed under the MIT license.
@@ -29,7 +29,7 @@ const grunt = require('grunt');
     test.doesNotThrow(block, [error], [message])
     test.ifError(value)
 */
-exports.html2md = {
+exports.turndown = {
   setUp: function setUp(done) {
     // setup here if necessary
     done();

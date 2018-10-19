@@ -1,6 +1,6 @@
 /**
- * grunt-html2md
- * https://github.com/paazmaya/grunt-html2md
+ * grunt-turndown
+ * https://github.com/marcusds/grunt-turndown
  *
  * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)
  * Licensed under the MIT license.
@@ -8,9 +8,9 @@
 
 'use strict';
 
-const toMarkdown = require('to-markdown');
+const TurndownService = require('turndown');
 
-module.exports = function html2md(grunt) {
+module.exports = function turndown(grunt) {
 
   const filterSrc = function filterSrc(filepath) {
     // Warn on and remove invalid source files (if no null was set).
@@ -27,7 +27,7 @@ module.exports = function html2md(grunt) {
     encoding: 'utf8'
   };
 
-  grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function register() {
+  grunt.registerMultiTask('turndown', 'Transform HTML files to Markdown', function register() {
 
     const options = this.options({
       gfm: false
@@ -42,7 +42,8 @@ module.exports = function html2md(grunt) {
         const html = grunt.file.read(filepath, fileOpts);
 
         // Convert
-        const md = toMarkdown(html, options);
+        const turndownService = TurndownService(options);
+        const md = turndownService.turndown(html);
 
         // Replace suffix of source to create destination
         let dest = files.dest;

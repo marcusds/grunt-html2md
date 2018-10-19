@@ -12,6 +12,6 @@ How to reproduce with minimal working example.
  * Node.js:
  * npm:
  * Grunt.js:
- * grunt-html2md:
+ * grunt-turndown:
 
 Thank you and have some :ice_cream:.

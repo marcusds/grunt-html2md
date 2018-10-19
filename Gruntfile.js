@@ -1,6 +1,6 @@
 /**
- * grunt-html2md
- * https://github.com/paazmaya/grunt-html2md
+ * grunt-turndown
+ * https://github.com/marcusds/grunt-turndown
  *
  * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)
  * Licensed under the MIT license.
@@ -20,7 +20,7 @@ module.exports = function gruntConf(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    html2md: {
+	  turndown: {
       main: {
         options: {
           gfm: true
@@ -43,6 +43,6 @@ module.exports = function gruntConf(grunt) {
 
   grunt.loadTasks('tasks');
 
-  grunt.registerTask('test', ['clean', 'html2md', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'turndown', 'nodeunit']);
   grunt.registerTask('default', ['test']);
 };

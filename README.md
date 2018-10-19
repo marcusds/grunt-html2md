@@ -1,12 +1,6 @@
-# grunt-html2md
+# grunt-turndown
 
 > Transform HTML files to Markdown in a Grunt task
-
-[![Build Status](https://img.shields.io/travis/paazmaya/grunt-html2md.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-html2md)
-[![Code Climate](https://img.shields.io/codeclimate/github/paazmaya/grunt-html2md.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-html2md)
-[![dependencies Status](https://david-dm.org/paazmaya/grunt-html2md/status.svg)](https://david-dm.org/paazmaya/grunt-html2md)
-[![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
-[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-html2md/index?flat)](https://github.com/igrigorik/ga-beacon)
 
 
 ## Getting Started
@@ -26,27 +20,27 @@ use Grunt plugins. Once you're familiar with that process,
 you may install this plugin with this command:
 
 ```sh
-npm install grunt-html2md --save-dev
+npm install grunt-turndown --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile
 with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-html2md');
+grunt.loadNpmTasks('grunt-turndown');
 ```
 
 
-## The "html2md" task
+## The "turndown" task
 
 ### Overview
 
-In your project's Gruntfile, add a section named `html2md` to the data object passed
+In your project's Gruntfile, add a section named `turndown` to the data object passed
 into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  html2md: {
+  turndown: {
     your_target: {
       // Target-specific source file lists and/or file write options go here.
     },
@@ -79,7 +73,7 @@ as the given source file.
 
 ```js
 grunt.initConfig({
-  html2md: {
+  turndown: {
     main: {
       src: [
         'src/*.html',

@@ -1,19 +1,17 @@
 {
-  "name": "grunt-html2md",
+  "name": "grunt-turndown",
   "description": "Transform HTML files to Markdown in a Grunt task",
-  "version": "2.0.0",
-  "homepage": "https://github.com/paazmaya/grunt-html2md",
+  "version": "3.0.0",
+  "homepage": "https://github.com/marcusds/grunt-turndown",
   "author": {
-    "name": "Juga Paazmaya",
-    "email": "paazmaya@yahoo.com",
-    "url": "https://paazmaya.fi"
+    "name": "marcusds"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/paazmaya/grunt-html2md.git"
+    "url": "git://github.com/marcusds/grunt-turndown.git"
   },
   "bugs": {
-    "url": "https://github.com/paazmaya/grunt-html2md/issues"
+    "url": "https://github.com/marcusds/grunt-turndown/issues"
   },
   "license": "MIT",
   "files": [
@@ -21,7 +19,7 @@
     "tasks",
     "README.md"
   ],
-  "main": "tasks/html2md.js",
+  "main": "tasks/turndown.js",
   "engines": {
     "node": ">=8.11.1"
   },
@@ -30,7 +28,7 @@
     "lint": "eslint Gruntfile.js tasks test"
   },
   "dependencies": {
-    "to-markdown": "~3.1"
+    "turndown": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^5.5.0",
