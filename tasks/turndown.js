@@ -43,7 +43,7 @@ module.exports = function turndown(grunt) {
 
         // Convert
         const turndownService = TurndownService(options);
-        const md = turndownService.turndown(html);
+        const md = turndownService.remove(['script', 'style', 'title']).turndown(html);
 
         // Replace suffix of source to create destination
         let dest = files.dest;
