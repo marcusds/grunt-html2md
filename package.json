@@ -1,7 +1,7 @@
 {
   "name": "grunt-turndown",
   "description": "Transform HTML files to Markdown in a Grunt task",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "homepage": "https://github.com/marcusds/grunt-turndown",
   "author": {
     "name": "marcusds"
