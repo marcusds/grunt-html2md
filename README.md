@@ -11,7 +11,7 @@ This Grunt task plugin transforms the given HTML files to the
 This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
 version to be minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule), and
 handles the transformation via
-[HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~3.0`.
+[Turndown](https://github.com/domchristie/turndown) `~5.0`.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the
 [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to
@@ -51,8 +51,8 @@ grunt.initConfig({
 
 ### Options
 
-Options are passed to the `to-markdown` handler, please see
-https://github.com/domchristie/to-markdown for further details
+Options are passed to the `trundown` handler, please see
+https://github.com/domchristie/turndown for further details
 
 #### options.gfm
 
@@ -105,6 +105,8 @@ npm test
 
 ## Version history
 
+* `v3.1.1` (2018-10)
+  - Use Turndown, the replacement for html2md
 * `v2.0.0` (2017-07)
   - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
   - `main` property in `package.json` was pointing to a wrong file
@@ -126,6 +128,6 @@ npm test
 
 ## License
 
-Copyright (c) [Juga Paazmaya](https://paazmaya.fi) <paazmaya@yahoo.com>
+Portions copyright [Juga Paazmaya](https://paazmaya.fi) <paazmaya@yahoo.com>.
 
 Licensed under the [MIT license](LICENSE).

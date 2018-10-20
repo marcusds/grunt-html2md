@@ -20,7 +20,7 @@ module.exports = function gruntConf(grunt) {
     },
 
     // Configuration to be run (and then tested).
-	  turndown: {
+    turndown: {
       main: {
         options: {
           gfm: true

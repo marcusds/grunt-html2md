@@ -8,7 +8,7 @@
 
 'use strict';
 
-const TurndownService = require('turndown');
+const turndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
 
 module.exports = function turndown(grunt) {
@@ -43,10 +43,12 @@ module.exports = function turndown(grunt) {
         const html = grunt.file.read(filepath, fileOpts);
 
         // Convert
-        const gfm = turndownPluginGfm.gfm;
-        const turndownService = TurndownService(options);
-        turndownService.use(gfm);
-        const md = turndownService.remove(['script', 'style', 'title']).turndown(html);
+        const turndownInstance = turndownService(options);
+        if (options.gfm === true) {
+          const gfm = turndownPluginGfm.gfm;
+          turndownInstance.use(gfm);
+        }
+        const md = turndownInstance.remove(['script', 'style', 'title']).turndown(html);
 
         // Replace suffix of source to create destination
         let dest = files.dest;
