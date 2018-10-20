@@ -51,7 +51,7 @@ grunt.initConfig({
 
 ### Options
 
-Options are passed to the `trundown` handler, please see
+Options are passed to the `turndown` handler, please see
 https://github.com/domchristie/turndown for further details
 
 #### options.gfm
