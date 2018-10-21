@@ -2,6 +2,9 @@
 
 > Transform HTML files to Markdown in a Grunt task
 
+[![Build Status](https://travis-ci.org/marcusds/grunt-turndown.svg?branch=master)](https://travis-ci.org/marcusds/grunt-turndown)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8a98dae35b4e2bb57d60/maintainability)](https://codeclimate.com/github/marcusds/grunt-turndown/maintainability)
+[![dependencies Status](https://david-dm.org/marcusds/grunt-turndown/status.svg)](https://david-dm.org/marcusds/grunt-turndown)
 
 ## Getting Started
 
@@ -83,17 +86,10 @@ grunt.initConfig({
   },
 })
 ```
-
-## Contributing
-
-["A Beginner's Guide to Open Source: The Best Advice for Making your First Contribution"](http://www.erikaheidi.com/blog/a-beginners-guide-to-open-source-the-best-advice-for-making-your-first-contribution/).
-
-[Also there is a blog post about "45 Github Issues Dos and Don’ts"](https://davidwalsh.name/45-github-issues-dos-donts).
+## Testing and Linting
 
 Linting is done with [ESLint](http://eslint.org) and can be executed with `npm run lint`.
 There should be no errors appearing after any JavaScript file changes.
-
-## Testing
 
 Unit tests are done with [Nodeunit](https://github.com/caolan/nodeunit/ "Easy unit testing in node.js and the browser, based on the assert module").
 
@@ -104,26 +100,12 @@ npm test
 ```
 
 ## Version history
-
-* `v3.1.1` (2018-10)
+* `v3.1.0` (2018-10)
+  - Fix optional GFM.
+  
+* `v3.0.0` (2018-10)
+  - Initial release of grunt-turndown
   - Use Turndown, the replacement for html2md
-* `v2.0.0` (2017-07)
-  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
-  - `main` property in `package.json` was pointing to a wrong file
-* `v1.2.0` (2016-08-11)
-  - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
-  - Use ESLint directly without the Grunt.js plugin
-* `v1.1.0` (2016-02-15)
-  - Updating dependencies
-  - Minimum Node.js version supported is `4.2.0` (LTS)
-* `v1.0.0` (2015-05-05)
-  - Updating dependencies and better file configuration
-* `v0.1.2` (2014-08-23)
-  - Dependencies update and general code quality
-* `v0.1.1` (2013-12-20)
-  - Linting with eslint instead of JSHint for better coverage
-* `v0.1.0` (2013-07-23)
-  - Initial release
 
 
 ## License

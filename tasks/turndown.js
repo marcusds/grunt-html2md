@@ -45,8 +45,7 @@ module.exports = function turndown(grunt) {
         // Convert
         const turndownInstance = turndownService(options);
         if (options.gfm === true) {
-          const gfm = turndownPluginGfm.gfm;
-          turndownInstance.use(gfm);
+          turndownInstance.use(turndownPluginGfm.gfm);
         }
         const md = turndownInstance.remove(['script', 'style', 'title']).turndown(html);
 

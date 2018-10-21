@@ -1,7 +1,7 @@
 {
   "name": "grunt-turndown",
   "description": "Transform HTML files to Markdown in a Grunt task",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "homepage": "https://github.com/marcusds/grunt-turndown",
   "author": {
     "name": "marcusds"
@@ -32,13 +32,11 @@
     "turndown-plugin-gfm": "^1.0.2"
   },
   "devDependencies": {
-    "eslint": "^5.5.0",
-    "eslint-config-paazmaya": "^5.0.0",
+    "eslint": "^5.7.0",
     "grunt": "~1.0",
     "grunt-contrib-clean": "~2.0",
     "grunt-contrib-nodeunit": "~2.0",
-    "jit-grunt": "~0.10",
-    "time-grunt": "~1.4"
+    "jit-grunt": "~0.10"
   },
   "peerDependencies": {
     "grunt": "~1.0"
